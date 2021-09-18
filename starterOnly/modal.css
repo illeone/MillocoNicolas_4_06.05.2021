@@ -70,7 +70,8 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+/* changement responsive ----------- 700 à 940px*/
+@media screen and (max-width: 940px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -78,7 +79,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -480,7 +481,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 940px) {
   .hero-section {
     display: block;
     box-shadow: unset;
