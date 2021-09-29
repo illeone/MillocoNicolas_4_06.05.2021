@@ -70,12 +70,16 @@ img {
   display: none;
 }
 
-/* changement responsive ----------- 700 à 940px*/
+/* changement responsive ----------- 700 à 900px*/
 @media screen and (max-width: 940px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+    /* size, color et margin -----------------*/
+    color: #fe142f;
+    margin-top: -10px;
+    font-size: 2.5rem;
   }
 }
 
@@ -100,7 +104,10 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    /* margin-top: -15px; ---------------------*/
+    /* size, color et margin -----------------*/
+    color: #fe142f;
+    margin-top: -3px;
+    font-size: 1.8rem;
   }
 } 
 
@@ -211,7 +218,7 @@ input {
   font-size: 20px;
   height: 48px;
 }
-.formData[data-error]::after {
+/* .formData[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
   color: #e54858;
@@ -228,7 +235,7 @@ input {
 }
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
-}
+} */
 /* 
 input[data-error]::after {
     content: attr(data-error);
@@ -408,7 +415,6 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -423,7 +429,7 @@ input[data-error]::after {
   color: #fff;
   position: relative;
   text-align: left;
-  min-width: 424px;
+  /* min-width: 424px;--------------------------------- */
 }
 .hero-content::after {
   content: "";
@@ -529,12 +535,11 @@ footer {
   }
   .copyrights {
     /* ------------------------- */
-    margin-top: -6rem;
+    margin-top: -1rem;
     text-align: center;
     font-size: 0.8rem;
   }
 }
-
 @keyframes modalopen {
   from {
     opacity: 0;
