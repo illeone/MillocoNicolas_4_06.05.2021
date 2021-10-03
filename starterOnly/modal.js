@@ -34,6 +34,16 @@ document.getElementById("closeform").addEventListener("click", function(closeMod
 	modalBg.style.display = "none";
 });
 
+const displayError = (element) => {
+	element.style.display = "block";
+	element.style.fontSize = "0.8rem";
+	element.style.color = "red";
+}
+  
+const hideError = (element) => {
+	element.style.display = "none";
+}
+
 
 
 
