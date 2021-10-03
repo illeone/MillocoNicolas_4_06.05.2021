@@ -550,3 +550,25 @@ footer {
   }
 }
 
+#error-firstname{
+  display: none;
+}
+#error-lastname{
+  display: none;
+}
+#error-birthdate{
+  display: none;
+}
+#error-mail{
+  display: none;
+}
+#error-quantity{
+  display: none;
+}
+#error-locations{
+  display: none;
+}
+#error-cgu{
+  display: none;
+}
+
