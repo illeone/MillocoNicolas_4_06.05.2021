@@ -44,6 +44,18 @@ const hideError = (element) => {
 	element.style.display = "none";
 }
 
+function firstNameCheck() {
+	const firstName = document.getElementById("first").value;
+	const errorFirstname = document.getElementById("error-firstname");
+	if (firstName == "" || firstName.length < 2) {
+    	displayError(errorFirstname);
+    	return false;
+  	} else {
+    	hideError(errorFirstname);
+		return true;
+  	}
+}
+
 
 
 
