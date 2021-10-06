@@ -56,6 +56,20 @@ function firstNameCheck() {
   	}
 }
 
+// Formulaire Nom
+
+const lastNameCheck = () => {
+	const lastName = document.getElementById("last").value;
+	const errorLastname = document.getElementById("error-lastname");
+	if (/^[a-zA-Z\-]{2,}$/.test(lastName)) {
+		hideError(errorLastname);
+		return true;
+	} else {
+		displayError(errorLastname);
+		return false;
+	}
+}
+
 
 
 
