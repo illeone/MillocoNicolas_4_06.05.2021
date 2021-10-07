@@ -70,6 +70,33 @@ const lastNameCheck = () => {
 	}
 }
 
+// Formulaire email
+
+const emailCheck = () => {
+	const eMail = document.getElementById("email").value;
+	const errorMail = document.getElementById("error-mail");
+	if (/^([a-z]\.?)+@([a-z]+\.)+[a-z]+$/.test(eMail) == false) {
+		displayError(errorMail);
+		return false;
+	} else {
+		hideError(errorMail);
+		return true;
+	}
+}
+
+// Formulaire anniversaire
+
+const birthdateCheck = () => {
+	const birthDate = document.getElementById("birthdate").value;
+	const errorBirthdate = document.getElementById("error-birthdate");
+	if (birthDate == "") {
+		displayError(errorBirthdate);
+		return false;
+	} else {
+		hideError(errorBirthdate);
+		return true;
+	}
+
 
 
 
