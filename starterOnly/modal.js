@@ -96,6 +96,21 @@ const birthdateCheck = () => {
 		hideError(errorBirthdate);
 		return true;
 	}
+}
+
+// Formulaire participations
+
+const participationCheck = () => {
+	const numberOfParticipation = document.getElementById("quantity").value;
+	const errorquantity = document.getElementById("error-quantity");
+	if (/^([0-9])$/.test(numberOfParticipation) == false) {
+		displayError(errorquantity);
+		return false;
+	} else {
+		hideError(errorquantity);
+		return true;
+	}
+}
 
 
 
