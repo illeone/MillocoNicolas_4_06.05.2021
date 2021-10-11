@@ -112,6 +112,18 @@ const participationCheck = () => {
 	}
 }
 
+const locationCheck = () => {
+	const locations = document.querySelectorAll("input[type=radio]:checked");
+	const errorlocations = document.getElementById("error-locations");
+		if (locations.length) {
+			hideError(errorlocations);
+			return true;
+		} else {
+			displayError(errorlocations);
+			return false;
+		}
+}
+
 
 
 
