@@ -124,6 +124,20 @@ const locationCheck = () => {
 		}
 }
 
+// Formulaire conditions générales
+
+const cguCheck = () => {
+	const isCguAccepted = document.getElementById("checkbox1");
+	const errorcgu = document.getElementById("error-cgu");
+	if (!isCguAccepted.checked) {
+		displayError(errorcgu);
+		return false;
+	} else {
+		hideError(errorcgu);
+		return true;
+	}
+}
+
 
 
 
