@@ -138,6 +138,16 @@ const cguCheck = () => {
 	}
 }
 
+const clear = () => {
+	thankBg.style.display = "none";
+	modalBg.style.display = "none";
+	first.style.border = "none"; //permet de supprimer l'encadrement vert ou rouge après avoir appuyer sur la croix
+	last.style.border = "none";
+	email.style.border = "none";
+	birthdate.style.border = "none";
+	quantity.style.border = "none";
+}
+
 
 
 
