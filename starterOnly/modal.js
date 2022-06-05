@@ -29,10 +29,10 @@ document.getElementById("closeform").addEventListener("click", function(closeMod
 
 // Clic fermer formulaire via la croix
 
-document.getElementById("closeform").addEventListener("click", function(closeModal) 
-{
-	modalBg.style.display = "none";
-});
+// document.getElementById("closeform").addEventListener("click", function(closeModal) 
+// {
+// 	modalBg.style.display = "none";
+// });
 
 const displayError = (element) => {
 	element.style.display = "block";
@@ -138,17 +138,7 @@ const cguCheck = () => {
 	}
 }
 
-const clear = () => {
-	thankBg.style.display = "none";
-	modalBg.style.display = "none";
-	first.style.border = "none"; //permet de supprimer l'encadrement vert ou rouge après avoir appuyer sur la croix
-	last.style.border = "none";
-	email.style.border = "none";
-	birthdate.style.border = "none";
-	quantity.style.border = "none";
+function validate(e) {
+	e.preventDefault();
+
 }
-
-
-
-
-
