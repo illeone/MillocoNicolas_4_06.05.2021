@@ -156,3 +156,6 @@ function validate(e) {
 		return true;
 	}
 }
+
+// afficher le message de remerciement après avoir vérifier que le formulaire soit bien valide
+document.querySelector("#form").addEventListener("submit",validate)
