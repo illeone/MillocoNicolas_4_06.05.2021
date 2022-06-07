@@ -11,6 +11,7 @@ function editNav() {
 const modalBg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
+const thankBg = document.querySelector(".bground-thank");
 
 // Clic "je m'inscris"
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
@@ -151,11 +152,11 @@ function validate(e) {
 
 	if (isValidFirstName && isValidLastName && isValidEmail && isValidBirth && isValidParticipation && isValidLocaton && isValidCgu){
 		document.querySelector("form").reset();
-		thankBg.style.display = "block";
 		modalBg.style.display = "none";
-		return true;
+		thankBg.style.display = "block";
 	}
 }
 
-// afficher le message de remerciement après avoir vérifier que le formulaire soit bien valide
+// mise en application de la fonction validate au submit
 document.querySelector("#form").addEventListener("submit",validate)
+
