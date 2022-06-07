@@ -160,3 +160,12 @@ function validate(e) {
 // mise en application de la fonction validate au submit
 document.querySelector("#form").addEventListener("submit",validate)
 
+
+// fermer remerciement via "fermer"
+document.querySelector(".button-thank").addEventListener("click", function(closeThank) {
+	clear();
+});
+
+// fermer remerciement via croix
+document.getElementById("closethanks").addEventListener("click", clear)
+
