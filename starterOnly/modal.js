@@ -50,9 +50,11 @@ function firstNameCheck() {
 	const errorFirstname = document.getElementById("error-firstname");
 	if (firstName == "" || firstName.length < 2) {
     	displayError(errorFirstname);
+		first.style.border = "red solid 2px";
     	return false;
   	} else {
     	hideError(errorFirstname);
+		first.style.border = "green solid 2px";
 		return true;
   	}
 }
@@ -64,9 +66,11 @@ const lastNameCheck = () => {
 	const errorLastname = document.getElementById("error-lastname");
 	if (/^[a-zA-Z\-]{2,}$/.test(lastName)) {
 		hideError(errorLastname);
+		last.style.border = "green solid 2px";
 		return true;
 	} else {
 		displayError(errorLastname);
+		last.style.border = "red solid 2px";
 		return false;
 	}
 }
@@ -78,9 +82,11 @@ const emailCheck = () => {
 	const errorMail = document.getElementById("error-mail");
 	if (/^([a-z]\.?)+@([a-z]+\.)+[a-z]+$/.test(eMail) == false) {
 		displayError(errorMail);
+		email.style.border = "red solid 2px";
 		return false;
 	} else {
 		hideError(errorMail);
+		email.style.border = "green solid 2px";
 		return true;
 	}
 }
@@ -92,9 +98,11 @@ const birthdateCheck = () => {
 	const errorBirthdate = document.getElementById("error-birthdate");
 	if (birthDate == "") {
 		displayError(errorBirthdate);
+		birthdate.style.border = "red solid 2px";
 		return false;
 	} else {
 		hideError(errorBirthdate);
+		birthdate.style.border = "green solid 2px";
 		return true;
 	}
 }
@@ -106,9 +114,11 @@ const participationCheck = () => {
 	const errorquantity = document.getElementById("error-quantity");
 	if (/^([0-9])$/.test(numberOfParticipation) == false) {
 		displayError(errorquantity);
+		quantity.style.border = "red solid 2px";
 		return false;
 	} else {
 		hideError(errorquantity);
+		quantity.style.border = "green solid 2px";
 		return true;
 	}
 }
@@ -164,6 +174,11 @@ document.querySelector("#form").addEventListener("submit",validate)
 const clear = () => {
 	thankBg.style.display = "none";
 	modalBg.style.display = "none";
+	first.style.border = "none"; //permet de supprimer l'encadrement vert ou rouge après avoir appuyer sur la croix par exemple
+	last.style.border = "none";
+	email.style.border = "none";
+	birthdate.style.border = "none";
+	quantity.style.border = "none";
 }
 
 // fermer remerciement via "fermer"
