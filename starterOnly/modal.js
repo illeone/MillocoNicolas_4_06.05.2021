@@ -140,5 +140,19 @@ const cguCheck = () => {
 
 function validate(e) {
 	e.preventDefault();
+	
+	let isValidFirstName = firstNameCheck() //true
+	let isValidLastName = lastNameCheck() //false
+	let isValidEmail = emailCheck()
+	let isValidBirth = birthdateCheck()
+	let isValidParticipation = participationCheck()
+	let isValidLocaton = locationCheck()
+	let isValidCgu = cguCheck()
 
+	if (isValidFirstName && isValidLastName && isValidEmail && isValidBirth && isValidParticipation && isValidLocaton && isValidCgu){
+		document.querySelector("form").reset();
+		thankBg.style.display = "block";
+		modalBg.style.display = "none";
+		return true;
+	}
 }
