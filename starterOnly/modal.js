@@ -161,10 +161,13 @@ function validate(e) {
 document.querySelector("#form").addEventListener("submit",validate)
 
 
+const clear = () => {
+	thankBg.style.display = "none";
+	modalBg.style.display = "none";
+}
+
 // fermer remerciement via "fermer"
-document.querySelector(".button-thank").addEventListener("click", function(closeThank) {
-	clear();
-});
+document.querySelector(".button-thank").addEventListener("click", clear)
 
 // fermer remerciement via croix
 document.getElementById("closethanks").addEventListener("click", clear)
