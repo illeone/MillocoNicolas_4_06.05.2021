@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
 }
-
 /* Landing Page */
 
 body {
@@ -34,13 +33,16 @@ img {
 }
 
 .topnav {
-  overflow: hidden;
-  margin: 3.5%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 20px 50px 20px;
+  padding: 0 4vw;
 }
 .header-logo {
     float: left;
 }
 .main-navbar {
+    margin-top: 10px;
     float: right;
 }
 .topnav a {
@@ -53,11 +55,11 @@ img {
   text-decoration: none;
   font-size: 20px;
   font-family: Roboto, sans-serif;
+  transition: 1s;
 }
 
 .topnav a:hover {
-  background-color: #ff0000;
-  color: #ffffff;
+  transform: scale(1.1);
   border-radius: 15px;
 }
 
@@ -67,12 +69,21 @@ img {
   border-radius: 15px;
 }
 
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+  position: relative;
+  top: -5px;
+  right: 45px;
+}
+
 .topnav .icon {
   display: none;
 }
 
 /* changement responsive ----------- 700 à 900px*/
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1150px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -82,23 +93,35 @@ img {
     margin-top: -10px;
     font-size: 2.5rem;
   }
+
+  /* .main-navbar {float: right;} */
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1150px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0;
+    margin-top: 0;
   }
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
+    position: relative;
+    top: -5px;
+    right: 45px;
   }
 }
 
-
+/* modification couleur topanv survol responsive------------------------------ */
+@media screen and (max-width: 940px) {
+.topnav a:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+  transition: 1s;
+}
+}
 
  @media screen and (max-width: 540px) {
   .topnav a {display: none;}
@@ -107,10 +130,20 @@ img {
     display: block;
     /* size, color et margin -----------------*/
     color: #fe142f;
-    margin-top: -3px;
+    margin-top: -12px;
     font-size: 1.8rem;
+    transition: 1s;
   }
+  
 } 
+/* @media screen and (max-width: 540px) {
+.topnav a:hover { */
+  /* background-color: #ff0000; */
+  /* color: #ffffff; */
+  /* border-radius: 15px;
+  transition: 1s; */
+/* }
+} */
 
 main {
   font-size: 130%;
@@ -488,7 +521,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1080px) {
 
   img {
     padding-right: 1rem;
@@ -541,6 +574,7 @@ footer {
     font-size: 0.8rem;
   }
 }
+
 @keyframes modalopen {
   from {
     opacity: 0;
