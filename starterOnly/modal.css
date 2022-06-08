@@ -40,6 +40,7 @@ img {
 }
 .header-logo {
     float: left;
+    padding-top: 12px;
 }
 .main-navbar {
     margin-top: 10px;
@@ -81,6 +82,7 @@ img {
 
 .topnav .icon {
   display: none;
+  margin-right: -12px;
 }
 
 /* changement responsive ----------- 700 à 900px*/
@@ -130,7 +132,7 @@ img {
   .topnav a.icon {
     float: left;
     display: block;
-    margin-top: 0px;
+    margin-top: 12px;
     font-size: 1.5rem;
   }
 
@@ -143,7 +145,8 @@ img {
     right: -20px;
   }
   .topnav.responsive .icon {
-    top: 9px;
+    top: 22px;
+    margin-right: 8px;
   }
   .header-logo img {
     width: 150px;
@@ -277,6 +280,20 @@ input {
   font-size: 20px;
   height: 48px;
 }
+
+.label_title{
+  cursor: pointer;
+}
+.checkbox-label{
+  cursor: pointer;
+}
+.checkbox2-label{
+  cursor: pointer;
+}
+#birthdate{
+  cursor:text;
+}
+
 /* .formData[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
@@ -374,6 +391,12 @@ input[data-error]::after {
   opacity: 1;
   cursor: pointer;
   transform: scale(0.7);
+  transition: 0.5s;
+}
+
+.close:hover{
+  transform: rotate(90deg)scale(0.7);
+  transition: 0.3s;
 }
 .close:before,
 .close:after {
@@ -402,6 +425,11 @@ input[data-error]::after {
   cursor: pointer;
   border: 0;
 }
+
+.btn-submit:hover{
+background: #3876ac;
+}
+
 /* custom select styles */
 .custom-select {
   position: relative;

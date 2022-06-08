@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css?family=DM+Sans"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
   </head>
   <body>
     <div class="topnav" id="myTopnav">
@@ -66,7 +69,7 @@
             >
               <div
                 class="formData">
-                <label for = "first" >Prénom</label><br>  
+                <label class="label_title" for = "first" >Prénom</label><br>  
                 <!-- lier label à l'input -->
                 <input
                   class="text-control"
@@ -78,7 +81,7 @@
               </div>
               <div
                 class="formData">
-                <label for = "last" >Nom </label><br>
+                <label class="label_title" for = "last" >Nom </label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -89,7 +92,7 @@
               </div>
               <div
                 class="formData">
-                <label for = "email">E-mail</label><br>
+                <label class="label_title" for = "email">E-mail</label><br>
                 <input
                   class="text-control"
                   type="email"
@@ -100,7 +103,7 @@
               </div>
               <div
                 class="formData">
-                <label for = "birthdate">Date de naissance</label><br>
+                <label class="label_title" for = "birthdate">Date de naissance</label><br>
                 <input
                   class="text-control"
                   type="date"
@@ -111,7 +114,7 @@
               </div>
               <div
                 class="formData">
-                <label for = "quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
+                <label  class="label_title" for = "quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
               </div>
               <span id="error-quantity">Veuillez entrer une valeur numérique.</span>
