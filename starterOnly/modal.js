@@ -13,13 +13,15 @@ const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const thankBg = document.querySelector(".bground-thank");
 
-// Clic "je m'inscris"
-modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
 // Lancement formulaire (changement du display en block)
 function launchModal() {
   modalBg.style.display = "block";
 }
+
+// Clic "je m'inscris"
+modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
+
 
 // Clic fermer formulaire via la croix
 
@@ -28,12 +30,7 @@ document.getElementById("closeform").addEventListener("click", function(closeMod
 	modalBg.style.display = "none";
 });
 
-// Clic fermer formulaire via la croix
-
-// document.getElementById("closeform").addEventListener("click", function(closeModal) 
-// {
-// 	modalBg.style.display = "none";
-// });
+// Fonction qui permet d'afficher un message d'erreur
 
 const displayError = (element) => {
 	element.style.display = "block";
@@ -41,9 +38,13 @@ const displayError = (element) => {
 	element.style.color = "red";
 }
   
+// Fonction qui permet de masquer un message d'erreur
+
 const hideError = (element) => {
 	element.style.display = "none";
 }
+
+// Formulaire Prénom
 
 function firstNameCheck() {
 	const firstName = document.getElementById("first").value;
